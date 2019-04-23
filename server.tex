@@ -1,0 +1,101 @@
+% !TeX TS-program = xelatex
+
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% 字符编码
+% \usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+
+% moderncv 主题
+\moderncvstyle{classic}                         % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
+\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+
+
+% 调整页边距
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+
+% 个人信息
+\name{梁}{栩尧}
+\title{服务端开发工程师}                     % 可选项、如不需要可删除本行
+% \address{街道及门牌号}{邮编及城市}            % 可选项、如不需要可删除本行
+\phone[mobile]{(86)~157~117~30339}              % 可选项、如不需要可删除本行
+\email{charles.xy.liang@gmail.com}                    % 可选项、如不需要可删除本行
+\extrainfo{\homepagesymbol https://charles-liang.github.io/}
+\begin{document}
+
+\maketitle
+
+
+\section{工作背景}
+\subsection{专业}
+\cventry{年 -- 年}{职位}{公司}{城市}{}{不超过1--2行的概况说明\newline{}%
+工作内容:%
+\begin{itemize}%
+\item 工作内容 1;
+\item 工作内容 2、 含二级内容:
+  \begin{itemize}%
+  \item 二级内容 (a);
+  \item 二级内容 (b)、含三级内容 (不建议使用);
+    \begin{itemize}
+    \item 三级内容 i;
+    \item 三级内容 ii;
+    \item 三级内容 iii;
+    \end{itemize}
+  \item 二级内容 (c);
+  \end{itemize}
+\item 工作内容 3。
+\end{itemize}}
+\cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
+\subsection{其他}
+\cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
+
+\section{语言技能}
+\cvitemwithcomment{语言 1}{水平}{评价}
+\cvitemwithcomment{语言 2}{水平}{评价}
+\cvitemwithcomment{语言 3}{水平}{评价}
+
+\section{计算机技能}
+\cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
+\cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
+\cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
+
+\section{个人兴趣}
+\cvitem{爱好 1}{\small 说明}
+\cvitem{爱好 2}{\small 说明}
+\cvitem{爱好 3}{\small 说明}
+
+\section{其他 1}
+\cvlistitem{项目 1}
+\cvlistitem{项目 2}
+\cvlistitem{项目 3}
+
+\renewcommand{\listitemsymbol}{-}             % 改变列表符号
+
+\section{其他 2}
+\cvlistdoubleitem{项目 1}{项目 4}
+\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+\cvlistdoubleitem{项目 3}{}
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+\section{教育背景}
+\cventry{2012 -- 2016}{学士}{广州大学华软软件学院}{软件工程}{}{}  % 第3到第6编码可留白
+
+\end{document}
+
+
